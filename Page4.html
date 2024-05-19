@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Main Page</title>
+	<style>
+		body {
+        	background-color: #2B2B2B;
+			color: #A1040B;
+        }
+
+        .navbar {
+            padding-left: 10px;
+            padding-right: 10px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-color: #333;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            background-color: #333;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            display: flex;
+        }
+
+        .navbar a {
+            color: #A1040B;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            text-align: center;
+        }
+
+        .navbar li{
+            float: left;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #2B2B2B;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .title {
+            text-align: center;
+            color: #A1040B;
+         }
+
+        .h1 {
+            font-size: 2.5em; 
+         }
+
+        .movie{
+            height: 200px;
+            width: 150px;
+		}
+
+		.container{
+			text-align: center;
+			background-color: #000000;
+			color: #A1040B;
+		}
+
+		.synopsis{
+			height: 230px;
+			width: 300px;
+			font-size: 15px;
+		}
+
+		.cast{
+			font-size: 15px;
+		}
+
+		.review{
+			font-size: 15px;
+		}
+
+		.rating{
+			font-size: 15px;
+		}
+
+		.table-bordered {
+			width: 80%;
+			margin: auto;
+			background-color: yellow
+		}	
+
+		.container {
+			background-color: gainsboro;
+			padding: 20px;
+			border-radius: 10px;
+		}
+
+		h2 {
+			color: darkorange;
+		}
+
+		.form-group {
+			display: flex;
+			flex-direction: column;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid black;
+			border-radius: 4px;
+		}
+
+		img {
+			width: 90px;
+		}
+
+		.movie-image {
+			background-color: #2B2B2B;
+		}
+
+		.profile {
+			display: flex;
+			justify-content: center;
+		}
+
+		.profile img{
+			width: 230px;
+			height: 140px;	
+		}
+
+		.porfolio {
+			text-align: center;
+			font-size: 40px;
+		}
+
+		.centered-text {
+			text-align: center;
+			font-size: 20px;
+		}
+
+		.comment-section {
+			text-align: center;
+			margin-top: 30px;
+		}
+
+		.comment-box {
+			width: 80%;
+			height: 100px;
+			background-color: #4B4B4B;
+			color: #FFFFFF;
+			border: none;
+			padding: 10px;
+			border-radius: 5px;
+			font-size: 16px;
+			margin-bottom: 10px;
+		}
+
+		.submit-button {
+			background-color: #A1040B;
+			color: #FFFFFF;
+			padding: 10px 20px;
+			font-size: 16px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar">
+        <img src="https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/ws-timnardelli/usr/images/artworks/main_image/items/f1/f1c23681cf76470b9527b70acb93b29f/dark-web-logo_redesign_mario-animation-file.png">
+        <ul>
+            <li class="dropdown">
+                <a href="Page1.html">First Quarter</a>
+                <div class="dropdown-content">
+                    <a href="Page1.html">Page 1</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="Page2.html">Second Quarter</a>
+                <div class="dropdown-content">
+                    <a href="Page2.html">Page 2</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="Page3.html">Third Quarter</a>
+                <div class="dropdown-content">
+                    <a href="Page3.html">Page 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">What's Next?</a>
+                <div class="dropdown-content">
+                	<a href="Page4.html">Page 4</a>
+                </div>
+            </li>
+        </ul> 
+    </nav>
+	
+	<p class="centered-text">As an ICT student, I expect that next year it would be a journey filled with discovery and growth. I expect to develop a solid understanding of programming fundamentals of Python. I look forward to honing my problem-solving skills through hands-on projects and challenges. Moreover, I expect Python to empower me to express my creativity and innovate whether it's through building interactive applications or delving into the realms of machine learning and artificial intelligence. Overall, I'm excited to embrace Python as a tool for realizing my programming ambitions and unlocking new opportunities in the digital world.</p>
+
+	<div class="comment-section">
+		<form id="commentForm">
+			<textarea class="comment-box" placeholder="What do you think about my portfolio?"></textarea>
+			<br>
+			<button type="submit" class="submit-button">Submit</button>
+		</form>
+	</div>
+
+	<script>
+		document.getElementById('commentForm').addEventListener('submit', function(event) {
+			event.preventDefault();
+			window.location.href = 'Page5.html'; 
+		});
+	</script>
+</body>
+</html>

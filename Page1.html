@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Page 1</title>
+  <style>
+    body {
+      background-color: #2B2B2B;
+      color: #A1040B;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      padding-left: 10px;
+      padding-right: 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: #333;
+    }
+
+    .navbar ul {
+      list-style-type: none;
+      background-color: #333;
+      padding: 0px;
+      margin: 0px;
+      overflow: hidden;
+      display: flex;
+    }
+
+    .navbar a {
+      color: #A1040B;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+      text-align: center;
+    }
+
+    .navbar li{
+      float: left;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #2B2B2B;
+      min-width: 160px;
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    img {
+      width: 90px;
+    }
+
+    .container {
+      text-align: center;
+      background-color: #000000;
+      color: #A1040B;
+    }
+
+    .back-button {
+      background-color: transparent;
+      border: 2px solid #A1040B;
+      color: #A1040B;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      display: block;
+      margin: auto;
+      margin-top: 20px;
+      transition: background-color 0.3s, color 0.3s;
+      text-decoration: none; /* Add this line */
+    }
+
+    .back-button:hover {
+      background-color: #A1040B;
+      color: white;
+    }
+  </style>
+</head>
+<body onload="display()">
+  <nav class="navbar">
+        <img src="https://artlogic-res.cloudinary.com/w_1600,h_1600,c_limit,f_auto,fl_lossy,q_auto/ws-timnardelli/usr/images/artworks/main_image/items/f1/f1c23681cf76470b9527b70acb93b29f/dark-web-logo_redesign_mario-animation-file.png">
+        <ul>
+            <li class="dropdown">
+                <a href="Page1.html">First Quarter</a>
+                <div class="dropdown-content">
+                    <a href="Page1.html">Page 1</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="Page2.html">Second Quarter</a>
+                <div class="dropdown-content">
+                    <a href="Page2.html">Page 2</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="Page3.html">Third Quarter</a>
+                <div class="dropdown-content">
+                    <a href="Page3.html">Page 3</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#">What's Next?</a>
+                <div class="dropdown-content">
+                  <a href="Page4.html">Page 4</a>
+                </div>
+            </li>
+        </ul> 
+    </nav>
+
+  <center>
+    <table border="1" cellpadding="10" bgcolor="#F5CB81" class="table-bordered">
+      <tr>
+        <th colspan="3"><strong><center>CHARACTERS IN NOLI ME TANGERE</center></strong></th>
+      </tr>
+
+      <tr>
+        <td><img src="https://i.pinimg.com/564x/b6/20/26/b620263787f341c1b747dea5bdab9fd0.jpg" width="70"></td>
+        <td>Juan Crisóstomo Ibarra y Magsalin (Ibarra)</td>
+        <td>
+          <li>He is the main male character in the story.</li>
+          <li>Ibarra studied in Spain and returned to the Philippines</li>
+        </td>
+      </tr>
+
+      <tr>
+        <td><img src="https://i.pinimg.com/564x/aa/78/ca/aa78cafac315c26a0f2cf66f757f3162.jpg" width="70"></td>
+        <td>Maria Clara</td>
+        <td>
+          <li>She is the main women character in the story.</li>
+          <li>She is the fiancée of Ibarra</li>
+        </td>
+      </tr>
+      
+      <tr>
+        <td><img src="https://i.pinimg.com/564x/31/d5/a9/31d5a983eee11252189484884a1779ad.jpg" width="70"></td>
+        <td>Kapitan Tiago</td>
+        <td>
+          <li>A business man in San Diego.</li>
+          <li>The father of Maria Clara (the biological father is a different person).</li>
+        </td>
+      </tr>
+
+      <tr>
+        <td><img src="https://i.pinimg.com/236x/be/49/e9/be49e94be7035ddbb4e57a8ed6d871ac.jpg" width="70"></td>
+        <td>Padre Damaso</td>
+        <td>
+          <li>He is the main antagonist in the story.</li>
+          <li>He is one of the priest in the story.</li>
+        </td>
+      </tr>
+
+      <tr>
+        <td><img src="https://i.pinimg.com/236x/8c/b6/d9/8cb6d9935756e331f6f9667d09111405.jpg" width="70"></td>
+        <td>Padre Salvi</td>
+        <td>
+          <li>The successor of Padre Damaso</li>
+          <li>Have a rivalry with the alferez</li>
+        </td>
+      </tr>
+    </table>
+  </center>
+
+  <a href="Main Page.html">Back to Main Page</a>
+
+  <script>
+    function display() {
+      alert("Enter page......@ ur own risk!!");
+    }
+  </script>
+</body>
+</html>
